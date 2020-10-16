@@ -1,11 +1,11 @@
 #!/bin/zsh
-RELEASE=release-04-02-01
+RELEASE=release-05-00-01
 
 source /cvmfs/belle.cern.ch/tools/b2setup
 b2setup $RELEASE
 
 # Deal with segmentation violation for some versions
-export LD_LIBRARY_PATH=/sw/belle/local/neurobayes-4.3.1/lib/:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/sw/belle/local/neurobayes/lib/:$LD_LIBRARY_PATH
 
 # Running on data for exp 31-65
 export USE_GRAND_REPROCESS_DATA=1
